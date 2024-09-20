@@ -44,7 +44,7 @@ const Hero = () => {
             <h1 className="text-3xl font-extrabold text-center text-primech mb-5"><span className="font-extralight text-white">Contact Us</span> Now</h1>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col">
               <div className="mb-5">
-                <label className="text-white font-semibold mb-2" htmlFor="name">Full Name</label>
+                <label className="text-white font-semibold mb-2" htmlFor="name">Full name</label>
                 <input
                   className="bg-bshade text-white border rounded-lg shadow py-2 px-4 block w-full appearance-none leading-normal border-none"
                   type="text"
@@ -67,18 +67,25 @@ const Hero = () => {
 
               {/* Phone Number Field */}
               <div className="mb-5">
-                <label className="text-white font-semibold mb-2" htmlFor="phone">Phone Number</label>
+                <label className="text-white font-semibold mb-2" htmlFor="phone">Phone number</label>
                 <input
                   className="bg-bshade text-white border rounded-lg shadow py-2 px-4 block w-full appearance-none leading-normal border-none"
                   type="tel"
                   id="phone"
                   name="user_phone"
+                  pattern="[+0-9]+"
+                  onInput={(e) => {
+                    e.target.value = e.target.value.replace(/[^+0-9]/g, '');
+                    if (e.target.value.length > 1 && e.target.value.charAt(0) !== '+') {
+                      e.target.value = e.target.value.replace(/^\+?/, '');
+                    }
+                  }}
                   required
                 />
               </div>
 
               <div className="mb-5">
-                <label className="text-white font-semibold mb-2" htmlFor="service">Select Service</label>
+                <label className="text-white font-semibold mb-2" htmlFor="service">Select service</label>
                 <select
                   className="bg-bshade text-white border rounded-lg shadow py-2 px-4 block w-full appearance-none leading-normal border-none custom-dropdown"
                   id="service"
@@ -86,8 +93,8 @@ const Hero = () => {
                   required
                 >
                   <option value="" disabled selected>Select service</option>
-                  <option value="Web Design">Web Design</option>
-                  <option value="Web Development">Web Development</option>
+                  <option value="Web Design">Web design</option>
+                  <option value="Web Development">Web development</option>
                 </select>
               </div>
 
