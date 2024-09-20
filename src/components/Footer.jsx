@@ -28,9 +28,8 @@ const Footer = () => {
                 {footerlink.links.map((link, index) => (
                   <li
                     key={link.name}
-                    className={`font-poppins font-normal sm:text-[1rem] text-[0.55rem] leading-[24px] text-dimWhite hover:text-primech cursor-pointer ${
-                      index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
-                    }`}
+                    className={`font-poppins font-normal sm:text-[1rem] text-[0.55rem] leading-[24px] text-dimWhite hover:text-primech cursor-pointer ${index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
+                      }`}
                     onClick={() => handleScroll(link.id)} // Use the custom scroll function
                   >
                     {link.name}
@@ -48,8 +47,8 @@ const Footer = () => {
         </p>
 
         <div className="flex sm:flex-row flex-row md:mt-0 mt-6 text-white sm:gap-6 gap-4 font-normal sm:text-[1rem] text-[0.8rem]">
-          <h1>+1(213) 375-8381</h1>
-          <h1>contact@primechagency.com</h1>
+          <a href="tel:+12133758381" className="hover:underline">+1(213) 375-8381</a>
+          <a href="mailto:contact@primechagency.com" className="hover:underline">contact@primechagency.com</a>
         </div>
       </div>
     </section>
