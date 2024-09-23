@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
 import CaseStudy1 from "./CaseStudy1";
 import Business from "./Business";
 import Clients from "./Clients";
