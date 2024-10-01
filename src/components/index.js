@@ -12,7 +12,6 @@ import Subsection from "./Subsection";
 
 export {
   Navbar,
-  Billing,
   CaseStudy1,
   Business,
   Clients,

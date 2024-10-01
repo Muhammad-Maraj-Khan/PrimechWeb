@@ -10,6 +10,7 @@ import Pricing from "./components/Pricing";
 import ThankYou from "./components/ThankYou"; 
 import CustomPackage from "./components/CustomPackage";
 import FAQs from "./components/FAQs";
+import PreLoader from "./components/Preloader";
 
 const faqs = [
   { question: 'Who owns the domain and hosting?', answer: 'The domain and hosting are entirely under your control. We’ll set everything up for you, but you’ll retain ownership and management rights.' },
@@ -18,6 +19,8 @@ const faqs = [
 ];
 
 const App = () => (
+  <main className='bg-black'>
+  <PreLoader/>
   <Router>
     <div className="bg-black w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -122,6 +125,7 @@ const App = () => (
       </div>
     </div>
   </Router>
+  </main>
 );
 
 export default App;
