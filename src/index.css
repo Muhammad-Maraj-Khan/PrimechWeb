@@ -63,12 +63,8 @@
     #11101d 91.61%
   );
 }
-.bg-pink-gradient{
-  background: linear-gradient(
-    45deg,
-    #4C4BBB 20%,
-    #EA13D8 100%
-  );
+.bg-pink-gradient {
+  background: linear-gradient(45deg, #4c4bbb 20%, #ea13d8 100%);
 }
 .bg-gray-gradient {
   background: linear-gradient(
@@ -131,16 +127,16 @@
 }
 
 .blue__gradient {
-  background: #4C4BBB;
+  background: #4c4bbb;
   filter: blur(140px);
 }
 
-.pink__gradient{
-  background: #EA13D8;
+.pink__gradient {
+  background: #ea13d8;
   filter: blur(140px);
 }
-.pink__gradient_2{
-  background: #EA13D8;
+.pink__gradient_2 {
+  background: #ea13d8;
   filter: blur(100px);
 }
 
@@ -149,8 +145,12 @@
   filter: blur(750px);
 }
 
-.grey_gradient{
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.27), rgba(102, 102, 102, 0.27))
+.grey_gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.27),
+    rgba(102, 102, 102, 0.27)
+  );
 }
 .embla {
   overflow: hidden;
@@ -192,7 +192,6 @@
   color: #ffffff;
 }
 
-
 .preloader {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -224,9 +223,39 @@
 }
 
 /* Media query for phones */
-@media (max-width: 599px) { /* 599px */
+@media (max-width: 599px) {
+  /* 599px */
   .preloader .texts-container {
-      font-size: 1rem; /* 17px */
-      width: 85%; /* 240px */
+    font-size: 1rem; /* 17px */
+    width: 85%; /* 240px */
   }
+}
+/* Style for the scroll bar track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scroll bar */
+}
+
+/* Style for the scroll bar thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    #4c4bbb 20%,
+    #ea13d8 100%
+  ); /* Gradient color */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Style for the scroll bar track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background color of the track */
+  border-radius: 6px;
+}
+
+/* Change the color on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    45deg,
+    #4c4bbb 20%,
+    #ea13d8 100%
+  ); /* Keep the gradient on hover */
 }

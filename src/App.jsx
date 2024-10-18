@@ -20,7 +20,7 @@ const faqs = [
 
 const App = () => (
   <main className='bg-black'>
-        <div class="mcwidget-embed" data-widget-id="31069999"></div>
+        
   <PreLoader/>
   <Router>
     <div className="bg-black w-full overflow-hidden">

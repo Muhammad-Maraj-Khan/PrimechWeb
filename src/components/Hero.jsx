@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { Button_Call } from ".";
 import { useNavigate } from 'react-router-dom';
@@ -93,7 +93,8 @@ const Hero = () => {
                   required
                 >
                   <option value="" disabled selected>Select service</option>
-                  <option value="Web Design">Web design</option>
+                  <option value="UI/UX">UI/UX</option>
+                  <option value="Graphic Design">Graphic Design</option>
                   <option value="Web Development">Web development</option>
                 </select>
               </div>
